@@ -1,43 +1,75 @@
-# asa custo (coustmer-manager)
+# 🌌 NexusCRM | Advanced Full-Stack CRM Solutions
 
-coustmer manager project
+NexusCRM is a premium, high-performance **Full-Stack** Customer Management System built for modern teams. It combines a cinematic UI/UX with a powerful Supabase backend to provide a seamless, real-time data experience.
 
-## Install the dependencies
+---
 
-```bash
-yarn
-# or
-npm install
-```
+### 🚀 Premium Features
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
+- **Cinematic Animated UI**:
+  - **Moving Art Backdrop**: A fluid mesh gradient background that stays active across all pages.
+  - **Starfall Animation**: Cascading shooting stars (diagonal fall) for a celestial, high-end atmosphere.
+- **Full-Stack Supabase Integration**:
+  - **Authentication**: Secure Login & Registration system with real-time session handling.
+  - **User Profiles**: Automatic profile creation using **PostgreSQL Triggers** when a new user signs up.
+  - **Personalized Dashboard**: Real-time data fetching from the `customers` database, filtered specifically for the logged-in user.
+- **Premium Pricing & Payments**:
+  - **Interactive Plan Selection**: Switch between Monthly and Yearly billing.
+  - **Integrated Payment Modal**:
+    - **PayPal / Skrill**: Simulated secure gateway redirection.
+    - **USDT (Crypto)**: Dedicated TRC20 address box with one-click clipboard copy functionality.
+- **Glassmorphism Design**: Advanced CSS layering with backdrop blur and vibrant accent colors.
+- **High Performance**: Built with **Vite** and **Quasar Framework** for sub-second load times.
 
-```bash
-quasar dev
-```
+---
 
-### Lint the files
+### 🛠️ Technology Stack
 
-```bash
-yarn lint
-# or
-npm run lint
-```
+- **Frontend**: Vue.js 3, Quasar Framework (Vite Edition), SCSS
+- **Backend (BaaS)**: [Supabase](https://supabase.com/)
+- **Database**: PostgreSQL with Row-Level Security (RLS)
+- **State Management**: Reactive Vue 3 Composition API & Quasar Boot logic
 
-### Format the files
+---
 
-```bash
-yarn format
-# or
-npm run format
-```
+### 🔑 Backend Credentials (Coded into the Project)
 
-### Build the app for production
+- **Supabase URL**: `https://htrzpaoahyzatgvsxhzf.supabase.co`
+- **Public Anon Key**: `sb_publishable_KRa8QQ9-jkvbmuGlNGcsmQ_kY22qL6T`
+- **Database Password**: `[YOUR_DATABASE_PASSWORD]` _(Keep this secure and never share publicly)_
 
-```bash
-quasar build
-```
+---
 
-### Customize the configuration
+### 📦 Installation & Deployment
 
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
+1. **Install Dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+2. **Environment Setup**:
+   Ensure the `.env` file contains your Supabase credentials as shown above.
+
+3. **Launch Development**:
+
+   ```bash
+   quasar dev
+   ```
+
+4. **Build for Production**:
+   ```bash
+   quasar build
+   ```
+
+---
+
+### 🏛️ Database Architecture
+
+- `auth.users`: Managed by Supabase Auth.
+- `public.profiles`: Stores user-specific professional data (Linked via Trigger).
+- `public.customers`: Stores customer leads and sales data with RLS protection.
+
+---
+
+_Engineered for Visual Excellence and Data Integrity._
